@@ -367,7 +367,7 @@ The BathPi have two working parts, which is shown in the device schematic and en
   <img width="650" height="400" src="pic/9.png">
 </p>
 <p align="center">
-  <em>Figure 9 device schematic and entity diagram</em>
+  <em>Figure 9 Device schematic and entity diagram</em>
 </p>
 
 To test the accuracy and fine-tune our temperatures sensors. We calibrated our sensors against thermometers.
@@ -405,10 +405,17 @@ Taking the time to work together and discuss really helped to clear out the clou
 
 ## Reference
 [1] http://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/
+
 [2] https://tutorials-raspberrypi.com/raspberry-pi-mqtt-broker-client-wireless-communication
+
 [3] http://www.d3noob.org/2015/02/raspberry-pi-multiple-temperature.html  
+
 [4] https://www.sunfounder.com/learn/sensor-kit-v2-0-for-raspberry-pi-b-plus/lesson-10-buzzer-module-sensor-kit-v2-0-for-b-plus.html
+
 [5] https://tutorials-raspberrypi.com/raspberry-pi-mqtt-broker-client-wireless-communication/
+
 [6] https://inferlab.github.io/12740/tutorials/openchirp.html
+
 [7] https://inferlab.github.io/12740/tutorials/adc.html
+
 [8] https://learn.adafruit.com/calibrating-sensors/two-point-calibration
