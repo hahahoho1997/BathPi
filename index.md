@@ -136,7 +136,6 @@ When the water level sensor detects that the water level reaches or exceeds the 
 
 ### Step 7: Write Python code to configure sensors’ active
 * The following is python code
-
 ```python
 #DS18B20 Setup
 os.system('modprobe w1-gpio')
@@ -204,7 +203,6 @@ payload=channel.voltage, qos=0, retain=True)
    publish.single(MQTT_PATH2, channel.voltage, hostname=MQTT_SERVER)
    time.sleep(1)
 ```
-
 ### Step 8: Write a python code to configure buzzer and LED light active
 * The following is python code 
 ```python
