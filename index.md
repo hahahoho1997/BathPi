@@ -380,7 +380,7 @@ temp is the temperature data collected when running our system.
 We can yield the corrected value as a function of temp (which can be written within our code ):
 CorrectedValue = (((temp – sensor1) * Rangethermo) / Rangesensor) + thermo1
 
-<b> Do this for both temperature sensors separately to get individual corrected values. Then take the average of them or proceed with any other operations.</b>
+<b>Do this for both temperature sensors separately to get individual corrected values. Then take the average of them or proceed with any other operations.</b>
 
 
 # Discussion
