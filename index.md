@@ -12,7 +12,7 @@ KO-CHENG CHEN, LIFEI ZHU, LISHAN QIAN, ZIYU DAI
 * Remote access to the real-time sensor’s data via OpenChirp.
 
 <p align="center">
-  <img width="300" height="250" src="pic/1.png">
+  <img width="300" height="270" src="pic/1.png">
 </p>
 <p align="center">
   <em>Figure 1 Diagram of  Project Goal</em>
