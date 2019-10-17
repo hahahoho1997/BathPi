@@ -354,7 +354,7 @@ if __name__ == '__main__':
   client.on_connect = on_connect
   client.on_message = on_message
   client.connect(MQTT_SERVER, 1883, 60)
-  client.loop_forever()
+  client.loop_forever ()
 ```
 # Experiment
 The BathPi have two working parts, which is shown in the device schematic and entity diagram in Figure 9.
