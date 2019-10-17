@@ -1,7 +1,7 @@
 # BathPi
 KO-CHENG CHEN, LIFEI ZHU, LISHAN QIAN, ZIYU DAI
 * Video Link: [BathPi](https://vimeo.com/366926560)
-video Password: welove12740
+* video Password: welove12740
 ## Introduction
 * This project is designed to detect the water level and water temperature inside a bathtub. The project consists of two parts; the first part uses water level and temperature sensors to detect bathtub water level and water temperature, the second part uses the buzzer and LED lights to notify the user of the bathtub water level and temperature.
 ## Motivation
