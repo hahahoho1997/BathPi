@@ -136,6 +136,7 @@ When the water level sensor detects that the water level reaches or exceeds the 
 
 ### Step 7: Write Python code to configure sensors’ active
 * The following is python code
+
 ```python
 #DS18B20 Setup
 os.system('modprobe w1-gpio')
@@ -191,7 +192,7 @@ while True:
    temp1 = read_temp1()
    temp2 = read_temp2()
    temp1 = (((temp1 - 0.375) * 70) / 68.187) + 0.01
-   temp2 = (((temp2 - 0.125) * 70) / 72.187) + 0.01
+   temp2 = (((temp2 - 0.125) * 70) / 72.187  + 0.01
    temp = (temp1+temp2)/2
    print('Temperature: ' + str(temp) + ' C')
    print('ADC Voltage: ' + str(channel.voltage) + 'V')
