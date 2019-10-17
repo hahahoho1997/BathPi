@@ -324,41 +324,41 @@ MQTT_PATH2 = "waterlevel"
 * subscribe on desired channels
 ```python
 def on_connect(client, userdata, flags, rc):
-  print("Connected with result code "+str(rc))
-  client.subscribe(MQTT_PATH1)
-  client.subscribe(MQTT_PATH2)
+    print("Connected with result code "+str(rc))
+    client.subscribe(MQTT_PATH1)
+    client.subscribe(MQTT_PATH2)
 ```
 * decoding and responding to values  through buzzers and LEDs
 ```python
 def on_message(client, userdata, msg):
-  check = msg.payload.decode()
-  channel_and_value = dict()
-  topic_name = msg.topic.split("/")[-1]
-  if topic_name == 'test_channel1':
-    channel_and_value[topic_name] = msg.payload.decode()
-    temp = msg.payload.decode()
-    temp = float(temp)
-    print('temp: '+ str(temp))
-    if temp > 25:
-      temphigh()
-    elif temp < 15:
-      templow()
-  elif topic_name == 'test_channel2':
-    channel_and_value[topic_name] = msg.payload.decode()
-    water_level = msg.payload.decode()
-    water_level = float(water_level)
-    print('water_level: ' + str(water_level))
-    if water_level >= 1.18:
+    check = msg.payload.decode()
+    channel_and_value = dict()
+    topic_name = msg.topic.split("/")[-1]
+    if topic_name == 'test_channel1':
+      channel_and_value[topic_name] = msg.payload.decode()
+      temp = msg.payload.decode()
+      temp = float(temp)
+      print('temp: '+ str(temp))
+      if temp > 25:
+        temphigh()
+      elif temp < 15:
+        templow()
+    elif topic_name == 'test_channel2':
+      channel_and_value[topic_name] = msg.payload.decode()
+      water_level = msg.payload.decode()
+      water_level = float(water_level)
+      print('water_level: ' + str(water_level))
+      if water_level >= 1.18:
 ```
 * set connection
 ```python
 if __name__ == '__main__':
-  setup()
-  client = mqtt.Client()
-  client.on_connect = on_connect
-  client.on_message = on_message
-  client.connect(MQTT_SERVER, 1883, 60)
-  client.loop_forever ()
+    setup()
+    client = mqtt.Client()
+    client.on_connect = on_connect
+    client.on_message = on_message
+    client.connect(MQTT_SERVER, 1883, 60)
+    client.loop_forever ()
 ```
 # Experiment
 The BathPi have two working parts, which is shown in the device schematic and entity diagram in Figure 9.
