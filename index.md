@@ -12,7 +12,7 @@ KO-CHENG CHEN, LIFEI ZHU, LISHAN QIAN, ZIYU DAI
 * Remote access to the real-time sensor’s data via OpenChirp.
 
 <p align="center">
-  <img width="300" height="200" src="pic/1.png">
+  <img width="300" height="250" src="pic/1.png">
 </p>
 <p align="center">
   <em>Figure 1 Diagram of  Project Goal</em>
@@ -191,6 +191,8 @@ bathpi.device_state[sensor2] = 0
 while True:
    temp1 = read_temp1()
    temp2 = read_temp2()
+   temp1 = (((temp1 - 0.375) * 70) / 68.187) + 0.01
+   temp2 = (((temp2 - 0.125) * 70) / 72.187  + 0.01
    temp = (temp1+temp2)/2
    print('Temperature: ' + str(temp) + ' C')
    print('ADC Voltage: ' + str(channel.voltage) + 'V')
