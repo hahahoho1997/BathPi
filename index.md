@@ -203,6 +203,7 @@ payload=channel.voltage, qos=0, retain=True)
    publish.single(MQTT_PATH2, channel.voltage, hostname=MQTT_SERVER)
    time.sleep(1)
 ```
+
 ### Step 8: Write a python code to configure buzzer and LED light active
 * The following is python code 
 ```python
