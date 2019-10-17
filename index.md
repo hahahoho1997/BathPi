@@ -369,6 +369,19 @@ The BathPi have two working parts, which is shown in the device schematic and en
   <em>Figure 9 device schematic and entity diagram</em>
 </p>
 
+To test the accuracy and fine-tune our temperatures sensors. We calibrated our sensors against thermometers.
+As the sensor’s data should vary linearly through range, we are using the two-point calibration method, which should give us a linear function to calibrate against, which will help with both slope and offset errors.
+First point we picked is room temperature water, which is generally the lower bound for bathing water. We took the reading from both the sensor(sensor1) and thermometer(thermo1)
+Then we switched room temperature water for hot water and took the reading from the sensor(sensor2) and thermometer(thermo2)
+Rangesensor=sensor2-sensor1
+Rangethermo=thermo2-thermo1
+temp is the temperature data collected when running our system.
+We can yield the corrected value as a function of temp (which can be written within our code ):
+CorrectedValue = (((temp – sensor1) * Rangethermo) / Rangesensor) + thermo1
+
+<b> Do this for both temperature sensors separately to get individual corrected values. Then take the average of them or proceed with any other operations.</b>
+
+
 # Discussion
 ## Project Rewards
 We started off the course  with next to nothing knowledge on sensors, but with the help of course lectures, course tutorials and google, we managed to delve into the parameters and principles and create a  presentable circuit system to our hearts’ desires. We learnt about resolution of sensors and ADCs.  We learned new means of transmitting data-MQTT protocol and how it can be implemented in Python code to not only transmit information between two RPi with the help of a broker.  We also learned to publish information on Openchirp for good visualization of current and historical data and of course, enable access on any mobile device.
@@ -391,15 +404,10 @@ Taking the time to work together and discuss really helped to clear out the clou
 
 ## Reference
 [1] http://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/
-
 [2] https://tutorials-raspberrypi.com/raspberry-pi-mqtt-broker-client-wireless-communication
-
 [3] http://www.d3noob.org/2015/02/raspberry-pi-multiple-temperature.html  
-
 [4] https://www.sunfounder.com/learn/sensor-kit-v2-0-for-raspberry-pi-b-plus/lesson-10-buzzer-module-sensor-kit-v2-0-for-b-plus.html
-
 [5] https://tutorials-raspberrypi.com/raspberry-pi-mqtt-broker-client-wireless-communication/
-
 [6] https://inferlab.github.io/12740/tutorials/openchirp.html
-
 [7] https://inferlab.github.io/12740/tutorials/adc.html
+[8] https://learn.adafruit.com/calibrating-sensors/two-point-calibration
