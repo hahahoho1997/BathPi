@@ -207,6 +207,7 @@ payload=channel.voltage, qos=0, retain=True)
 
 ### Step 8: Write a python code to configure buzzer and LED light active
 * The following is python code 
+
 ```python
 import RPi.GPIO as GPIO
 import time
@@ -282,6 +283,7 @@ def templow():
     GPIO.output(GREEN, 0)
     Buzz.stop()
 ```
+
 ### Step 9: : Creating an IoT Device
 * install client with 
 ```python
