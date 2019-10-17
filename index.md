@@ -12,7 +12,7 @@ KO-CHENG CHEN, LIFEI ZHU, LISHAN QIAN, ZIYU DAI
 * Remote access to the real-time sensor’s data via OpenChirp.
 
 <p align="center">
-  <img width="300" height="170" src="pic/1.png">
+  <img width="300" height="200" src="pic/1.png">
 </p>
 <p align="center">
   <em>Figure 1 Diagram of  Project Goal</em>
@@ -29,21 +29,21 @@ KO-CHENG CHEN, LIFEI ZHU, LISHAN QIAN, ZIYU DAI
 * We have processed using a buzzer to generate different sounds.
 
 <p align="center">
-  <img width="300" height="170" src="pic/2.jpg">
+  <img width="300" height="200" src="pic/2.jpg">
 </p>
 <p align="center">
   <em>Figure 2 Raspberry Pis of collect sensor’s data and sending data</em>
 </p>
 
 <p align="center">
-  <img width="300" height="170" src="pic/3.png">
+  <img width="300" height="200" src="pic/3.png">
 </p>
 <p align="center">
   <em>Figure 3 Raspberry Pis of receiving data</em>
 </p>
 
 <p align="center">
-  <img width="300" height="170" src="pic/4.png">
+  <img width="300" height="200" src="pic/4.png">
 </p>
 <p align="center">
   <em>Figure 4 Data sending between two Pis by MQTT service</em>
@@ -111,7 +111,7 @@ When the water level sensor detects that the water level reaches or exceeds the 
 * Follow the Figure to setup water level sensors
 
 <p align="center">
-  <img width="300" height="170" src="pic/6.png">
+  <img width="300" height="200" src="pic/6.png">
 </p>
 <p align="center">
   <em>Figure 7 setup a water level sensor</em>
@@ -125,7 +125,7 @@ When the water level sensor detects that the water level reaches or exceeds the 
 * Follow the Figure Setup the buzzer module
 
 <p align="center">
-  <img width="300" height="170" src="pic/7.jpg">
+  <img width="300" height="200" src="pic/7.jpg">
 </p>
 <p align="center">
   <em>Figure 8 setup buzzer module</em>
@@ -190,6 +190,8 @@ bathpi.device_state[sensor2] = 0
 while True:
    temp1 = read_temp1()
    temp2 = read_temp2()
+   temp1 = (((temp1 - 0.375) * 70) / 68.187) + 0.01
+   temp2 = (((temp2 - 0.125) * 70) / 72.187) + 0.01
    temp = (temp1+temp2)/2
    print('Temperature: ' + str(temp) + ' C')
    print('ADC Voltage: ' + str(channel.voltage) + 'V')
@@ -358,7 +360,7 @@ if __name__ == '__main__':
 The BathPi have two working parts, which is shown in the device schematic and entity diagram in Figure 9.
 
 <p align="center">
-  <img width="850" height="260" src="pic/9.png">
+  <img width="650" height="400" src="pic/9.png">
 </p>
 <p align="center">
   <em>Figure 9 device schematic and entity diagram</em>
