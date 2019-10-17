@@ -12,7 +12,7 @@ KO-CHENG CHEN, LIFEI ZHU, LISHAN QIAN, ZIYU DAI
 * Remote access to the real-time sensor’s data via OpenChirp.
 
 <p align="center">
-  <img width="300" height="170" src="pics/1.png">
+  <img width="300" height="170" src="pic/1.png">
 </p>
 <p align="center">
   <em>Figure 1 Diagram of  Project Goal</em>
@@ -29,21 +29,21 @@ KO-CHENG CHEN, LIFEI ZHU, LISHAN QIAN, ZIYU DAI
 * We have processed using a buzzer to generate different sounds.
 
 <p align="center">
-  <img width="300" height="170" src="pics/2.jpg">
+  <img width="300" height="170" src="pic/2.jpg">
 </p>
 <p align="center">
   <em>Figure 2 Raspberry Pis of collect sensor’s data and sending data</em>
 </p>
 
 <p align="center">
-  <img width="300" height="170" src="pics/3.png">
+  <img width="300" height="170" src="pic/3.png">
 </p>
 <p align="center">
   <em>Figure 3 Raspberry Pis of receiving data</em>
 </p>
 
 <p align="center">
-  <img width="300" height="170" src="pics/4.png">
+  <img width="300" height="170" src="pic/4.png">
 </p>
 <p align="center">
   <em>Figure 4 Data sending between two Pis by MQTT service</em>
@@ -79,7 +79,7 @@ Parameters:
 * Output voltage signal: 0~4.2V                            
 
 <p align="center">
-  <img width="100" height="65" src="pics/5.png">
+  <img width="100" height="65" src="pic/5.png">
 </p>
 <p align="center">
   <em>Figure 5 Water level sensor</em>
@@ -94,7 +94,7 @@ Paramters:
 * Conversion time: 750ms at 12-bit 
 
 <p align="center">
-  <img width="100" height="100" src="pics/8.png">
+  <img width="100" height="100" src="pic/8.png">
 </p>
 <p align="center">
   <em>Figure 6  Temperature Sensor: DS18B20</em>
@@ -111,7 +111,7 @@ When the water level sensor detects that the water level reaches or exceeds the 
 * Follow the Figure to setup water level sensors
 
 <p align="center">
-  <img width="300" height="170" src="pics/6.png">
+  <img width="300" height="170" src="pic/6.png">
 </p>
 <p align="center">
   <em>Figure 7 setup a water level sensor</em>
@@ -125,7 +125,7 @@ When the water level sensor detects that the water level reaches or exceeds the 
 * Follow the Figure Setup the buzzer module
 
 <p align="center">
-  <img width="300" height="170" src="pics/7.jpg">
+  <img width="300" height="170" src="pic/7.jpg">
 </p>
 <p align="center">
   <em>Figure 8 setup buzzer module</em>
@@ -358,7 +358,7 @@ if __name__ == '__main__':
 The BathPi have two working parts, which is shown in the device schematic and entity diagram in Figure 9.
 
 <p align="center">
-  <img width="650" height="260" src="pics/9.png">
+  <img width="850" height="260" src="pic/9.png">
 </p>
 <p align="center">
   <em>Figure 9 device schematic and entity diagram</em>
