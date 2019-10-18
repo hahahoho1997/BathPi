@@ -361,14 +361,14 @@ if __name__ == '__main__':
     client.loop_forever ()
 ```
 <p align="center">
-  <img width="300" height="270" src="pic/10.png">
+  <img width="300" height="270" src="pic/10.jpg">
 </p>
 <p align="center">
   <em>Figure 9 Test Openchirp on the computer</em>
 </p>
 
 <p align="center">
-  <img width="300" height="270" src="pic/11.png">
+  <img width="300" height="270" src="pic/11.jpg">
 </p>
 <p align="center">
   <em>Figure 10 Using phone to check the Openchirp</em>
@@ -381,7 +381,7 @@ The BathPi have two working parts, which is shown in the device schematic and en
   <img width="650" height="400" src="pic/9.png">
 </p>
 <p align="center">
-  <em>Figure 12 Device schematic and entity diagram</em>
+  <em>Figure 11 Device schematic and entity diagram</em>
 </p>
 
 To test the accuracy and fine-tune our temperatures sensors. We calibrated our sensors against thermometers.
